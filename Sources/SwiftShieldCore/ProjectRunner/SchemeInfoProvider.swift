@@ -19,7 +19,7 @@ struct SchemeInfoProvider: SchemeInfoProviderProtocol {
         let command = "/usr/bin/xcodebuild"
         let projectParameter = isWorkspace ? "-workspace" : "-project"
         let arguments: [String] = [
-            projectParameter, projectFile.path, "-scheme", schemeName, "-sdk", "iphonesimulator", "clean", "build",
+            projectParameter, projectFile.path, "-scheme", schemeName, "-sdk", "iphoneos", "clean", "build",
         ]
 
         let result = taskRunner.runTask(withCommand: command, arguments: arguments)

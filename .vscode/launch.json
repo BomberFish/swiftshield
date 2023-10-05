@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Debug swiftshield",
+            "program": "${workspaceFolder:swiftshield}/.build/debug/swiftshield",
+            "args": [],
+            "cwd": "${workspaceFolder:swiftshield}",
+            "preLaunchTask": "swift: Build Debug swiftshield"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Release swiftshield",
+            "program": "${workspaceFolder:swiftshield}/.build/release/swiftshield",
+            "args": [],
+            "cwd": "${workspaceFolder:swiftshield}",
+            "preLaunchTask": "swift: Build Release swiftshield"
+        }
+    ]
+}
